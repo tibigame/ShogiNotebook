@@ -1,0 +1,4 @@
+﻿# フォルダを除外
+.idea/
+ShogiNotebook/__pycache__/
+tests/__pycache__/

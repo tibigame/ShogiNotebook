@@ -1,0 +1,646 @@
+<< start logger
+>> usi
+<< id name Yomita_kppt_file4.0
+<< id author Ryuzo Tukamoto
+<< 
+<< option name BookDir type string default book.txt
+<< option name byoyomi_margin type spin default 0 min 0 max 60000
+<< option name Draw_Score type spin default -50 min -32000 max 32000
+<< option name EvalDir type string default eval/kppt_file/WCSC27
+<< option name EvalShare type check default false
+<< option name Hash type spin default 1024 min 1 max 65536
+<< option name Minimum_Thinking_Time type spin default 15 min 0 max 5000
+<< option name Move_Overhead type spin default 60 min 0 max 5000
+<< option name MultiPV type spin default 1 min 1 max 500
+<< option name nodestime type spin default 0 min 0 max 10000
+<< option name ProgressDir type string default progress/1
+<< option name ProgressSaveDir type string default progress/save
+<< option name Slow_Mover type spin default 70 min 10 max 1000
+<< option name Threads type spin default 1 min 1 max 128
+<< option name UseBook type check default true
+<< option name USI_Ponder type check default true
+<< option name Write_Debug_Log type check default false
+<< usiok
+>> setoption name Threads value 4
+>> setoption name EvalDir value H:\shogi\yomita_WCSC27\eval\kppt_file\WCSC27
+>> setoption name ProgressDir value H:\shogi\yomita_WCSC27\progress\1
+>> getoption NetworkDelay
+<< unknown command: getoption NetworkDelay
+>> getoption Hash
+<< unknown command: getoption Hash
+>> isready
+<< info string use non-shared eval memory
+<< info string open success H:\shogi\yomita_WCSC27\progress\1/progress.bin.
+<< readyok
+>> usinewgame
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 2 multipv 1 score cp 52 nodes 102 nps 51000 time 2 pv 2g2f
+<< info depth 2 seldepth 5 multipv 1 score cp 106 nodes 360 nps 180000 time 2 pv 2g2f 3c3d 2f2e
+<< info depth 5 seldepth 7 multipv 1 score cp 81 nodes 2196 nps 732000 time 3 pv 2g2f 3c3d 6i7h 4a3b 2f2e
+<< info depth 7 seldepth 11 multipv 1 score cp 4 nodes 10240 nps 2048000 time 5 pv 2g2f 3c3d 2f2e 2b3c 7g7f 3a2b 8h3c+ 2b3c
+<< info depth 8 seldepth 14 multipv 1 score cp 20 nodes 16035 nps 2290714 time 7 pv 2g2f 3c3d 7g7f 4a3b 6i7h 2b3c 8h3c+ 2a3c 2f2e
+<< info depth 9 seldepth 14 multipv 1 score cp 112 nodes 22496 nps 2499555 time 9 pv 2g2f 3c3d 7g7f 4a3b 2f2e 7a6b 6i7h 2b8h+ 7i8h
+<< info depth 10 seldepth 16 multipv 1 score cp 80 upperbound nodes 25036 nps 2503600 time 10 pv 2g2f 3c3d
+<< info depth 9 seldepth 15 multipv 1 score cp 120 nodes 25037 nps 2503700 time 10 pv 2g2f 3c3d 7g7f 4a3b 2f2e 2b3c 8h3c+ 2a3c 2e2d 2c2d 2h2d
+<< bestmove 2g2f ponder 3c3d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 55 nodes 131 nps 131000 time 1 pv 2f2e 2b3c
+<< info depth 2 seldepth 4 multipv 1 score cp 55 nodes 258 nps 258000 time 1 pv 2f2e 2b3c
+<< info depth 6 seldepth 9 multipv 1 score cp 117 nodes 1836 nps 918000 time 2 pv 7g7f 4a3b 6i7h 2b8h+ 7i8h 3a2b
+<< info depth 8 seldepth 14 multipv 1 score cp 101 nodes 11878 nps 2969500 time 4 pv 7g7f 4a3b 2f2e 2b8h+ 7i8h 3a2b 5i6h 2b3c 6h7h
+<< info depth 9 seldepth 14 multipv 1 score cp 101 nodes 16943 nps 3388600 time 5 pv 7g7f 4a3b 2f2e 2b8h+ 7i8h 3a2b 5i6h 2b3c 6h7h
+<< info depth 10 seldepth 14 multipv 1 score cp 112 nodes 31636 nps 3515111 time 9 pv 7g7f 4a3b 2f2e 8c8d 6i7h 2b8h+ 7i8h B*3c B*7g 3a2b 5i6i
+<< info depth 11 seldepth 14 multipv 1 score cp 112 nodes 34155 nps 3415500 time 10 pv 7g7f 4a3b 2f2e 8c8d 6i7h 2b8h+ 7i8h B*3c B*7g 3a2b 5i6i
+<< bestmove 7g7f ponder 4a3b
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp 47 nodes 228 nps 228000 time 1 pv 6i7h
+<< info depth 2 seldepth 6 multipv 1 score cp 50 nodes 438 nps 438000 time 1 pv 6i7h 2b3c 8h3c+ 2a3c
+<< info depth 5 seldepth 8 multipv 1 score cp 78 nodes 2613 nps 1306500 time 2 pv 2f2e 8c8d 2e2d 2c2d 2h2d
+<< info depth 7 seldepth 11 multipv 1 score cp 10 nodes 6826 nps 2275333 time 3 pv 6i7h 8c8d 2f2e 8d8e 5i6h 8e8f 8g8f 8b8f
+<< info depth 8 seldepth 14 multipv 1 score cp 101 nodes 20074 nps 2867714 time 7 pv 6i7h 2b3c 8h3c+ 2a3c 5i6h 3a2b 3i4h 8c8d 7i8h
+<< info depth 9 seldepth 14 multipv 1 score cp 86 nodes 27394 nps 3424250 time 8 pv 6i7h 2b3c 8h3c+ 2a3c 5i6h 5a4b 7i8h 3a2b 2f2e B*4d
+<< info depth 10 seldepth 16 multipv 1 score cp 45 upperbound nodes 37780 nps 3434545 time 11 pv 6i7h 8c8d
+<< info depth 9 seldepth 14 multipv 1 score cp 67 nodes 37780 nps 3434545 time 11 pv 6i7h 2b8h+ 7i8h 3a2b B*7g 2b3c 3i4h B*5d 5i6h 5d7f
+<< bestmove 6i7h ponder 2b8h+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 6 multipv 1 score cp 54 nodes 126 nps 63000 time 2 pv 2f2e 8d8e
+<< info depth 2 seldepth 6 multipv 1 score cp 54 nodes 346 nps 173000 time 2 pv 2f2e 8d8e
+<< info depth 4 seldepth 10 multipv 1 score cp 6 nodes 1700 nps 566666 time 3 pv 9g9f 2b3c 8h3c+ 2a3c B*7g 8d8e
+<< info depth 5 seldepth 10 multipv 1 score cp 77 nodes 2918 nps 729500 time 4 pv 2f2e 8d8e 5i5h 8e8f 8g8f
+<< info depth 7 seldepth 11 multipv 1 score cp 17 nodes 5850 nps 1170000 time 5 pv 2f2e 8d8e 5i5h 5a4b 2e2d 2c2d 2h2d
+<< info depth 8 seldepth 11 multipv 1 score cp -31 nodes 11694 nps 1461750 time 8 pv 2f2e 8d8e 2e2d 2c2d 2h2d P*2c 8h2b+ 3a2b 2d3d
+<< info depth 9 seldepth 13 multipv 1 score cp 53 nodes 14889 nps 1488900 time 10 pv 2f2e 8d8e 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d2h
+<< info depth 10 seldepth 13 multipv 1 score cp 53 nodes 18972 nps 1459384 time 13 pv 2f2e 8d8e 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d2h
+<< bestmove 2f2e ponder 8d8e
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 6 multipv 1 score cp -47 nodes 202 nps 101000 time 2 pv 5i5h
+<< info depth 2 seldepth 7 multipv 1 score cp 48 nodes 401 nps 200500 time 2 pv 5i5h 2b8h+ 7i8h
+<< info depth 5 seldepth 10 multipv 1 score cp 134 nodes 2153 nps 717666 time 3 pv 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f
+<< info depth 7 seldepth 11 multipv 1 score cp 2 nodes 5989 nps 1497250 time 4 pv 2e2d 2c2d 2h2d 8e8f 8g8f 8b8f 2d3d 2b8h+ 7i8h B*2c
+<< info depth 8 seldepth 13 multipv 1 score cp 6 nodes 12827 nps 1425222 time 9 pv 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 8f8b
+<< info depth 9 seldepth 13 multipv 1 score cp 52 nodes 20551 nps 1467928 time 14 pv 5i5h
+<< bestmove 5i5h ponder 8e8f
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 10 multipv 1 score cp 77 nodes 393 nps 393000 time 1 pv 8g8f
+<< info depth 2 seldepth 10 multipv 1 score cp -48 nodes 582 nps 582000 time 1 pv 8g8f 8b8f
+<< info depth 6 seldepth 10 multipv 1 score cp 6 nodes 2057 nps 1028500 time 2 pv 8g8f 8b8f 2e2d 2c2d 2h2d 8f8b
+<< info depth 8 seldepth 10 multipv 1 score cp 6 nodes 5332 nps 1777333 time 3 pv 8g8f 8b8f 2e2d 2c2d 2h2d 8f7f 8h2b+ 3a2b
+<< info depth 9 seldepth 17 multipv 1 score cp -1 nodes 10949 nps 2737250 time 4 pv 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h B*3c 2d2a+ 3c8h+ B*7g 8h7h 7g8f
+<< info depth 10 seldepth 17 multipv 1 score cp -1 nodes 21695 nps 2711875 time 8 pv 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h B*3c 2d2a+ 3c8h+ B*7g 8h7h 7g8f
+<< info depth 9 seldepth 13 multipv 1 score cp 3 nodes 21695 nps 2711875 time 8 pv 8g8f 8b8f 2e2d 2c2d 2h2d 8f7f 8h7g 2b7g+ 7h7g
+<< bestmove 8g8f ponder 8b8f
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -74 nodes 236 nps 236000 time 1 pv 2e2d 2c2d 2h2d
+<< info depth 2 seldepth 7 multipv 1 score cp -74 nodes 559 nps 279500 time 2 pv 2e2d 2c2d 2h2d
+<< info depth 7 seldepth 13 multipv 1 score cp -54 nodes 3374 nps 1124666 time 3 pv 2e2d 2c2d 2h2d 8f8h+ 7i8h B*3c 2d2h 3c8h+ 7h8h 2b8h+ 2h2a+ 8h8i
+<< info depth 9 seldepth 16 multipv 1 score cp -54 nodes 7348 nps 1837000 time 4 pv 2e2d 2c2d 2h2d 8f8h+ 7i8h B*3c 2d2h 3c8h+ 7h8h 2b8h+ 2h2a+ 8h8i
+<< bestmove 2e2d ponder 2c2d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -74 nodes 230 nps 230000 time 1 pv 2h2d
+<< info depth 2 seldepth 9 multipv 1 score cp -27 nodes 496 nps 496000 time 1 pv 2h2d 8f8h+ 7i8h B*3c
+<< info depth 3 seldepth 9 multipv 1 score cp -27 nodes 726 nps 363000 time 2 pv 2h2d 8f8h+ 7i8h B*3c
+<< info depth 8 seldepth 14 multipv 1 score cp -54 nodes 2891 nps 963666 time 3 pv 2h2d 8f8h+ 7i8h B*3c 2d2h 3c8h+ 7h8h 2b8h+ 2h2a+ 8h8i
+<< info depth 9 seldepth 14 multipv 1 score cp -127 upperbound nodes 11879 nps 1484875 time 8 pv 2h2d 2b8h+
+<< info depth 9 seldepth 15 multipv 1 score cp -54 nodes 11879 nps 1484875 time 8 pv 2h2d 8f8h+ 7i8h B*3c 2d2h 3c8h+ 7h8h 2b8h+ 2h2a+ 8h8i
+<< bestmove 2h2d ponder 8f8h+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp 60 nodes 508 nps 508000 time 1 pv 7i8h B*3c 2d2a+ 3c8h+
+<< info depth 2 seldepth 8 multipv 1 score cp 60 nodes 851 nps 425500 time 2 pv 7i8h B*3c 2d2a+ 3c8h+
+<< info depth 6 seldepth 12 multipv 1 score cp -1 nodes 3738 nps 1246000 time 3 pv 7i8h B*3c 2d2a+ 3c8h+ B*7e 8h7h 7e8f
+<< info depth 7 seldepth 13 multipv 1 score cp -487 nodes 7892 nps 1973000 time 4 pv 7i8h B*3c 2d2a+ 3c8h+ B*1e 5a6b P*8g 8h8i 8g8f 8i7h
+<< info depth 8 seldepth 13 multipv 1 score cp -300 nodes 8789 nps 1757800 time 5 pv 7i8h B*3c 2d2a+ 3c8h+ P*8g 8h2b 8g8f 2b2a
+<< info depth 9 seldepth 13 multipv 1 score cp 77 nodes 17163 nps 1907000 time 9 pv 7i8h B*3c 2d2a+ 3c8h+ B*6h 8h8i 6h8f 8i7h 8f5c+
+<< bestmove 7i8h ponder B*3c
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp 145 nodes 456 nps 456000 time 1 pv B*7g 8f7f 2d3d
+<< info depth 2 seldepth 5 multipv 1 score cp 193 nodes 659 nps 329500 time 2 pv 2d3d 8f8b
+<< info depth 6 seldepth 9 multipv 1 score cp 47 nodes 9694 nps 2423500 time 4 pv 2d2h 8f7f 8h7g 7f7d P*8g B*3c
+<< info depth 7 seldepth 9 multipv 1 score cp 97 nodes 18667 nps 2333375 time 8 pv B*5e 8f7f 8h7g 7f7d 2d2h 7d5d 5e6f
+<< info depth 8 seldepth 11 multipv 1 score cp 22 upperbound nodes 25035 nps 2503500 time 10 pv B*5e 8f7f
+<< info depth 7 seldepth 12 multipv 1 score cp 97 nodes 25035 nps 2503500 time 10 pv 2d2h 8f7f 8h7g 7f7d B*5e 7d5d 5e6f
+<< bestmove 2d2h ponder 8f7f
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 3 multipv 1 score cp 111 nodes 420 nps 210000 time 2 pv P*8g 8f7f
+<< info depth 2 seldepth 5 multipv 1 score cp 111 nodes 667 nps 222333 time 3 pv P*8g 8f7f
+<< info depth 5 seldepth 8 multipv 1 score cp 71 nodes 4187 nps 837400 time 5 pv B*6f 8f7f 5h6h 7f7d 8h7g
+<< info depth 6 seldepth 8 multipv 1 score cp 95 nodes 5677 nps 946166 time 6 pv 5h6h 8f7f P*8g 7f7d 8h7g B*3c
+<< info depth 7 seldepth 11 multipv 1 score cp 138 nodes 10686 nps 1187333 time 9 pv 5h6h 7a7b P*8g 8f7f B*6e 7f7d 6e7d 7c7d
+<< info depth 8 seldepth 11 multipv 1 score cp 232 nodes 19531 nps 1302066 time 15 pv P*8g 8f8b 5h6h 7a7b 3i4h B*4d B*7g 4d7g+ 8h7g
+<< info depth 9 seldepth 12 multipv 1 score cp 232 nodes 19935 nps 1329000 time 15 pv P*8g 8f8b 5h6h 7a7b 3i4h B*4d B*7g 4d7g+ 8h7g
+<< bestmove P*8g ponder 8f8b
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 306 nodes 389 nps 389000 time 1 pv B*7g
+<< info depth 2 seldepth 6 multipv 1 score cp 263 nodes 750 nps 375000 time 2 pv B*7g 7a7b
+<< info depth 5 seldepth 9 multipv 1 score cp 218 nodes 5858 nps 1171600 time 5 pv B*5e B*3c 5e3c+ 2a3c B*7g
+<< info depth 6 seldepth 9 multipv 1 score cp 206 nodes 7945 nps 1324166 time 6 pv B*5e B*3c 5e3c+ 2a3c 3i4h 7a7b
+<< info depth 7 seldepth 11 multipv 1 score cp 180 nodes 19473 nps 1497923 time 13 pv 8h7g 7c7d B*5e 8a7c 4i5i 7a7b 3i4h
+<< info depth 8 seldepth 11 multipv 1 score cp 180 nodes 20783 nps 1484500 time 14 pv 8h7g 7c7d B*5e 8a7c 4i5i 7a7b 3i4h
+<< bestmove 8h7g ponder 7c7d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp 272 nodes 408 nps 204000 time 2 pv B*6e
+<< info depth 2 seldepth 9 multipv 1 score cp 192 nodes 751 nps 375500 time 2 pv B*5e 8c8d 3i4h 8d5d 5e6f B*3c 6f3c+ 2a3c
+<< info depth 6 seldepth 9 multipv 1 score cp 126 nodes 5704 nps 1901333 time 3 pv B*5e B*3c 5e3c+ 2a3c 5h6h 7c7d
+<< info depth 7 seldepth 9 multipv 1 score cp 187 nodes 19510 nps 2438750 time 8 pv B*4f B*4d 3i3h 9c9d 3g3f 9d9e 3h3g 8c8d
+<< info depth 9 seldepth 10 multipv 1 score cp 187 nodes 21497 nps 2687125 time 8 pv B*4f B*4d 3i3h 9c9d 3g3f 9d9e 3h3g 8c8d
+<< bestmove B*4f ponder B*4d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 3 multipv 1 score cp 108 nodes 145 nps 145000 time 1 pv 4f5e 9c9d
+<< info depth 2 seldepth 6 multipv 1 score cp 193 nodes 396 nps 396000 time 1 pv 3g3f 9c9d 3i3h
+<< info depth 3 seldepth 7 multipv 1 score cp 166 nodes 590 nps 295000 time 2 pv 3g3f 9c9d 3i3h 4b3c 2i3g 9d9e
+<< info depth 6 seldepth 7 multipv 1 score cp 122 nodes 2654 nps 884666 time 3 pv 3g3f 4b3c 3i3h 3c4d 2i3g 8c8d
+<< info depth 7 seldepth 8 multipv 1 score cp 90 nodes 6460 nps 1292000 time 5 pv 3g3f 4c4d 3i3h 4b4c 2i3g 8c8d 2h2i
+<< info depth 8 seldepth 10 multipv 1 score cp 77 nodes 11071 nps 1383875 time 8 pv 3g3f 4c4d 3i3h 9c9d 2i3g 9d9e 2h2i B*4c
+<< info depth 9 seldepth 11 multipv 1 score cp 67 nodes 19375 nps 1383928 time 14 pv 3g3f 4c4d
+<< info depth 8 seldepth 12 multipv 1 score cp 81 nodes 19375 nps 1383928 time 14 pv 3g3f 4c4d
+<< bestmove 3g3f ponder 4c4d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp 74 nodes 196 nps 196000 time 1 pv 3i3h
+<< info depth 2 seldepth 5 multipv 1 score cp 91 nodes 368 nps 368000 time 1 pv 3i3h 3c4d 2i3g 2a3c
+<< info depth 3 seldepth 5 multipv 1 score cp 91 nodes 509 nps 254500 time 2 pv 3i3h 3c4d 2i3g 2a3c
+<< info depth 7 seldepth 9 multipv 1 score cp 126 nodes 9191 nps 2297750 time 4 pv 3i3h 9c9d 2i3g 3c4d 5g5f 2a3c 4f6h
+<< info depth 8 seldepth 10 multipv 1 score cp 106 nodes 15358 nps 2559666 time 6 pv 3i3h 3c4d 2i3g B*5d 2h2f 2a3c 5h6h 8c8d
+<< info depth 9 seldepth 10 multipv 1 score cp 86 nodes 21327 nps 2665875 time 8 pv 3i3h 3c4d
+<< bestmove 3i3h ponder 3c4d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 3 multipv 1 score cp 131 nodes 127 nps 127000 time 1 pv 2i3g
+<< info depth 2 seldepth 4 multipv 1 score cp 125 nodes 394 nps 197000 time 2 pv 2i3g B*5d
+<< info depth 7 seldepth 9 multipv 1 score cp 127 nodes 3605 nps 901250 time 4 pv 2i3g 9c9d 9g9f B*5d 5h6h 5d3f 6h7i
+<< info depth 8 seldepth 11 multipv 1 score cp 3 upperbound nodes 21286 nps 1520428 time 14 pv 2i3g B*5d
+<< info depth 7 seldepth 11 multipv 1 score cp 84 nodes 21286 nps 1520428 time 14 pv 2i3g 8c8d
+<< bestmove 2i3g ponder 8c8d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 3 multipv 1 score cp 134 nodes 168 nps 84000 time 2 pv 5h6h
+<< info depth 2 seldepth 5 multipv 1 score cp 155 nodes 407 nps 203500 time 2 pv 2h2i B*5d 4i4h 5d3f
+<< info depth 6 seldepth 9 multipv 1 score cp 24 nodes 8320 nps 1188571 time 7 pv 2h2f 2a3c 5g5f 3c4e 4f6h 4e3g+ 3h3g
+<< info depth 7 seldepth 11 multipv 1 score cp 86 nodes 11707 nps 1300777 time 9 pv 2h2f 2a3c 5g5f 3c4e 3g4e 4d4e 4f5e 4e5f
+<< info depth 8 seldepth 11 multipv 1 score cp 85 nodes 19041 nps 1360071 time 14 pv 2h2f 9d9e 4i4h 2a3c 2f2i 8c8d 5g5f 3d3e 3f3e
+<< info depth 9 seldepth 11 multipv 1 score cp 85 nodes 20798 nps 1386533 time 15 pv 2h2f 9d9e 4i4h 2a3c 2f2i 8c8d 5g5f 3d3e 3f3e
+<< bestmove 2h2f ponder 9d9e
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 44 nodes 138 nps 138000 time 1 pv 4i4h 2a3c
+<< info depth 2 seldepth 8 multipv 1 score cp 55 nodes 395 nps 197500 time 2 pv 4i4h 8c8d 5g5f
+<< info depth 6 seldepth 8 multipv 1 score cp 85 nodes 2498 nps 832666 time 3 pv 5g5f 2a3c 4i4h 8c8d 2f2i 3d3e 3f3e
+<< info depth 7 seldepth 13 multipv 1 score cp 22 nodes 20824 nps 1301500 time 16 pv 4i4h 8c8d 2f2d 8d5d 2d2f 4d5e 2f2i 2a3c
+<< info depth 8 seldepth 13 multipv 1 score cp 22 nodes 21485 nps 1342812 time 16 pv 4i4h 8c8d 2f2d 8d5d 2d2f 4d5e 2f2i 2a3c
+<< bestmove 4i4h ponder 8c8d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 3 multipv 1 score cp 207 nodes 199 nps 99500 time 2 pv 2f2i
+<< info depth 2 seldepth 3 multipv 1 score cp 127 nodes 342 nps 171000 time 2 pv 2f2i B*5d
+<< info depth 5 seldepth 7 multipv 1 score cp 157 nodes 3345 nps 836250 time 4 pv 5g5f 2a3c 4f6h 7c7d 2f2i
+<< info depth 6 seldepth 8 multipv 1 score cp 166 nodes 4220 nps 844000 time 5 pv 5g5f 2a3c 2f2i 3c4e 3g4e 4d4e
+<< info depth 7 seldepth 9 multipv 1 score cp 44 nodes 8240 nps 1177142 time 7 pv 5g5f 2a3c 2f2i 3d3e 4f3e 4d3e 3f3e
+<< info depth 8 seldepth 10 multipv 1 score cp 148 nodes 14766 nps 1230500 time 12 pv 5g5f 2a3c 4f5g 7c7d 2f2i 8a7c 5g6f B*5d
+<< bestmove 5g5f ponder 2a3c
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp 125 nodes 291 nps 145500 time 2 pv 3f3e
+<< info depth 2 seldepth 8 multipv 1 score cp 227 nodes 496 nps 248000 time 2 pv 3f3e 8c8d 3e3d
+<< info depth 5 seldepth 9 multipv 1 score cp 351 nodes 1718 nps 572666 time 3 pv 3f3e 1d1e 3e3d 8c8d 4f6h
+<< info depth 6 seldepth 9 multipv 1 score cp 425 nodes 4812 nps 962400 time 5 pv 3f3e 1d1e 3e3d 8c8d 4f6h 8d5d
+<< info depth 7 seldepth 12 multipv 1 score cp 100 nodes 11072 nps 1230222 time 9 pv 3f3e P*3f 3g2e B*3i 4f6h 7c7d 2f3f 8a7c
+<< info depth 8 seldepth 12 multipv 1 score cp 97 nodes 15843 nps 1320250 time 12 pv 1g1f 3e3f 2f3f 2a3c 4f5g 7c7d 1f1e 1d1e
+<< info depth 9 seldepth 14 multipv 1 score cp 97 nodes 24851 nps 1307947 time 19 pv 1g1f 3e3f 2f3f 2a3c 4f5g 7c7d 1f1e 1d1e
+<< info depth 8 seldepth 14 multipv 1 score cp 215 nodes 24851 nps 1307947 time 19 pv 3f3e B*1e 2f3f 2a3c 4f5g 3c4e 3g4e 4d4e
+<< bestmove 3f3e ponder B*1e
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp 185 nodes 266 nps 133000 time 2 pv 2f3f B*2h
+<< info depth 2 seldepth 8 multipv 1 score cp 185 nodes 420 nps 210000 time 2 pv 2f3f B*2h
+<< info depth 8 seldepth 12 multipv 1 score cp 121 nodes 5131 nps 1710333 time 3 pv 2f3f B*2h 3g2e 2h3i+ 3f2f 8c8d 4f6h 7c7d 3h3g
+<< info depth 9 seldepth 14 multipv 1 score cp 93 nodes 14001 nps 2800200 time 5 pv 2f3f B*2h 3g2e 2h4f+ 4g4f B*2h B*3g 2h3i+ 3h4g 8c8e
+<< info depth 10 seldepth 16 multipv 1 score cp 73 upperbound nodes 17880 nps 2554285 time 7 pv 2f3f B*2h
+<< info depth 9 seldepth 15 multipv 1 score cp 130 nodes 17880 nps 2554285 time 7 pv 2f3f B*2h
+<< bestmove 2f3f ponder B*2h
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 60 nodes 193 nps 96500 time 2 pv 3g2e
+<< info depth 2 seldepth 7 multipv 1 score cp 111 nodes 420 nps 210000 time 2 pv 3g2e 2h4f+ 4g4f B*2h
+<< info depth 6 seldepth 11 multipv 1 score cp 155 nodes 2726 nps 908666 time 3 pv 3g2e 2h4f+ 4g4f B*2h B*3g 2h3i+ 3e3d 8c8e
+<< info depth 8 seldepth 14 multipv 1 score cp 140 nodes 5291 nps 1322750 time 4 pv 3g2e 2h4f+ 4g4f B*2h B*3g 2h3i+ 3e3d 5b6b 3h4g 6b7a 7g6f
+<< info depth 9 seldepth 15 multipv 1 score cp 38 nodes 14331 nps 1592333 time 9 pv 3g2e 2h4f+ 4g4f B*2h 3e3d 2h1i+ 3d3c+ 2a3c 2e3c+ 4d3c
+<< info depth 10 seldepth 15 multipv 1 score cp -3 nodes 17750 nps 1613636 time 11 pv 3g2e 2h4f+
+<< info depth 10 seldepth 14 multipv 1 score cp 38 nodes 17750 nps 1613636 time 11 pv 3g2e 2h4f+ 4g4f B*2h 3e3d 2h1i+ 3d3c+ 2a3c 2e3c+ 4d3c
+<< bestmove 3g2e ponder 2h4f+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -6 nodes 264 nps 132000 time 2 pv 5h5i
+<< info depth 2 seldepth 8 multipv 1 score cp 285 nodes 448 nps 224000 time 2 pv 3h4i 3i2i 3e3d
+<< info depth 8 seldepth 11 multipv 1 score cp 280 nodes 6389 nps 1597250 time 4 pv 3h4i 3i2i 3e3d 5b6b 3f2f 2i3i 4h3h 3i9c 4i4h
+<< info depth 9 seldepth 16 multipv 1 score cp -35 upperbound nodes 21865 nps 2429444 time 9 pv 3h4i 3i4i
+<< info depth 8 seldepth 12 multipv 1 score cp 152 nodes 21865 nps 2429444 time 9 pv 3h4i 3i4i
+<< bestmove 3h4i ponder 3i4i
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp 293 nodes 26 nps 26000 time 1 pv 4i4h 4d4e
+<< info depth 2 seldepth 6 multipv 1 score cp 293 nodes 82 nps 82000 time 1 pv 4i4h 4d4e
+<< info depth 4 seldepth 7 multipv 1 score cp 131 nodes 248 nps 124000 time 2 pv 4i4h 4d4e 3f2f 4e4f 4g4f
+<< info depth 8 seldepth 11 multipv 1 score cp -15 nodes 4809 nps 1202250 time 4 pv 4i4h 4d4e 3f2f G*3f 2f2i 4e4f 4g4f B*3h
+<< info depth 9 seldepth 14 multipv 1 score cp 227 nodes 17821 nps 1485083 time 12 pv 4i4h
+<< bestmove 4i4h ponder 4d4e
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp 217 nodes 554 nps 277000 time 2 pv 3f3h 4e4f 4g4f B*2i
+<< info depth 2 seldepth 7 multipv 1 score cp 217 nodes 939 nps 469500 time 2 pv 3f3h 4e4f 4g4f B*2i
+<< info depth 5 seldepth 8 multipv 1 score cp 186 nodes 2621 nps 873666 time 3 pv 3f2f G*3f 2f2i 4e4f 4g4f 3f4f
+<< info depth 7 seldepth 9 multipv 1 score cp 64 nodes 5415 nps 1353750 time 4 pv 3f2f G*3f 2f2i 4e4f 4g4f 3f4f S*4g
+<< info depth 8 seldepth 12 multipv 1 score cp 241 nodes 7114 nps 1422800 time 5 pv 3f2f G*3f 2f2i 4e4f 4g4f B*2g S*4g 8c8d
+<< info depth 9 seldepth 14 multipv 1 score cp -16 upperbound nodes 18891 nps 1453153 time 13 pv 3f2f 4e4f
+<< info depth 8 seldepth 12 multipv 1 score cp 34 nodes 18891 nps 1453153 time 13 pv 3f2f 4e4f
+<< bestmove 3f2f ponder 4e4f
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 131 nodes 338 nps 169000 time 2 pv 4g4f
+<< info depth 2 seldepth 4 multipv 1 score cp 193 nodes 682 nps 341000 time 2 pv 4g4f G*3h
+<< info depth 4 seldepth 7 multipv 1 score cp -68 nodes 1631 nps 543666 time 3 pv 4g4f G*3h S*5g 5b6b
+<< info depth 6 seldepth 10 multipv 1 score cp 52 nodes 4962 nps 1240500 time 4 pv 4g4f G*3h B*6f 5b6b 4h4g 3h3g
+<< info depth 7 seldepth 10 multipv 1 score cp 23 nodes 6769 nps 1353800 time 5 pv 4g4f G*3h B*6f 8c8e S*5e B*2h 2f3f
+<< info depth 8 seldepth 12 multipv 1 score cp -175 nodes 16001 nps 1454636 time 11 pv 4g4f G*3h B*6f B*1e 2f3f 3h4h 6f4h 1e4h+ 5h4h
+<< info depth 9 seldepth 12 multipv 1 score cp -175 nodes 18872 nps 1451692 time 13 pv 4g4f G*3h B*6f B*1e 2f3f 3h4h 6f4h 1e4h+ 5h4h
+<< info depth 8 seldepth 14 multipv 1 score cp -64 nodes 18872 nps 1451692 time 13 pv 4g4f G*3h 1g1f 8c8e S*4g 3h4h 5h4h 8e3e
+<< bestmove 4g4f ponder G*3h
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp 62 nodes 718 nps 359000 time 2 pv 2f3f
+<< info depth 2 seldepth 7 multipv 1 score cp 250 nodes 1108 nps 369333 time 3 pv B*6f 8c8e
+<< info depth 5 seldepth 9 multipv 1 score cp -64 nodes 3365 nps 841250 time 4 pv 1g1f 8c8e S*4g 3h4h 5h4h 8e3e
+<< info depth 6 seldepth 9 multipv 1 score cp -64 nodes 5181 nps 1036200 time 5 pv 1g1f 8c8e S*4g 3h4h 5h4h 8e3e
+<< info depth 7 seldepth 11 multipv 1 score cp -41 nodes 11762 nps 1306888 time 9 pv 1g1f 8c8e S*4e 7c7d 3e3d 8a7c 2f3f
+<< info depth 8 seldepth 11 multipv 1 score cp -238 upperbound nodes 18390 nps 1313571 time 14 pv 1g1f 3h4h
+<< info depth 8 seldepth 13 multipv 1 score cp -104 nodes 18390 nps 1313571 time 14 pv 1g1f 8c8e S*4g 3h4h 5h4h 8e3e P*3f 3e3d
+<< bestmove 1g1f ponder 8c8e
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp 100 nodes 698 nps 349000 time 2 pv B*6e 2h1i+ 6e8c+ 7b8c
+<< info depth 2 seldepth 8 multipv 1 score cp 496 nodes 1216 nps 405333 time 3 pv B*2g 3h2i 2g1h 2h1i+ 1h2i
+<< info depth 4 seldepth 9 multipv 1 score cp 40 nodes 5714 nps 952333 time 6 pv 2f2h 3h2h B*4g 2h1i
+<< info depth 6 seldepth 11 multipv 1 score cp -72 nodes 10823 nps 1352875 time 8 pv 2f2h 3h2h B*4g 2h2g B*5e R*2h 3e3d
+<< info depth 7 seldepth 11 multipv 1 score cp -72 nodes 12708 nps 1412000 time 9 pv 2f2h 3h2h B*4g 2h2g B*5e R*2h 3e3d
+<< info depth 8 seldepth 11 multipv 1 score cp -147 upperbound nodes 18387 nps 1414384 time 13 pv 2f2h 3h2h
+<< info depth 7 seldepth 11 multipv 1 score cp -72 nodes 18387 nps 1414384 time 13 pv 2f2h 3h2h B*4g 2h2g B*5e R*2h 3e3d
+<< bestmove 2f2h ponder 3h2h
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 40 nodes 592 nps 296000 time 2 pv B*4g 2h1i
+<< info depth 2 seldepth 4 multipv 1 score cp 40 nodes 1020 nps 340000 time 3 pv B*4g 2h1i
+<< info depth 5 seldepth 9 multipv 1 score cp -173 nodes 5277 nps 1055400 time 5 pv 2e3c+ 3b3c 3e3d 3c3d B*3b
+<< info depth 6 seldepth 9 multipv 1 score cp -381 nodes 19420 nps 1387142 time 14 pv B*4g 8c8d
+<< info depth 5 seldepth 9 multipv 1 score cp -97 nodes 19420 nps 1387142 time 14 pv B*4g 8c8d
+<< bestmove B*4g ponder 8c8d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 70 nodes 581 nps 290500 time 2 pv B*7e
+<< info depth 2 seldepth 4 multipv 1 score cp -240 nodes 996 nps 332000 time 3 pv P*2c 2b2c
+<< info depth 4 seldepth 6 multipv 1 score cp -300 nodes 2114 nps 528500 time 4 pv P*2c 8d2d 2c2b+ 2d2b
+<< info depth 5 seldepth 9 multipv 1 score cp -373 nodes 4916 nps 819333 time 6 pv P*2c 8d2d 2c2b+ 3b2b 3e3d 2h1i
+<< info depth 6 seldepth 9 multipv 1 score cp -445 nodes 9634 nps 1070444 time 9 pv P*2c 8d2d 5h6h 2h1i 2c2b+ 3b2b
+<< info depth 7 seldepth 12 multipv 1 score cp 61 nodes 20851 nps 1303187 time 16 pv B*6f 8d9d S*3d 5b6b 2e3c+ 2a3c 3d3c+
+<< info depth 8 seldepth 12 multipv 1 score cp 61 nodes 21824 nps 1283764 time 17 pv B*6f 8d9d S*3d 5b6b 2e3c+ 2a3c 3d3c+
+<< bestmove B*6f ponder 8d9d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 6 multipv 1 score cp -97 nodes 478 nps 239000 time 2 pv S*8b
+<< info depth 2 seldepth 6 multipv 1 score cp 45 nodes 776 nps 258666 time 3 pv S*8b 2h1i 8b9a
+<< info depth 6 seldepth 9 multipv 1 score cp -197 nodes 5880 nps 1176000 time 5 pv S*3c 3b3c 2e3c+ 2d2g+ G*8b 2a3c 6f3c+
+<< info depth 7 seldepth 13 multipv 1 score cp -38 nodes 8121 nps 1353500 time 6 pv S*8b 9a9d 8b8a+ 7b8a N*3c 2h1i 3c2a+ R*2h 2a1a
+<< info depth 8 seldepth 13 multipv 1 score cp -38 nodes 10413 nps 1301625 time 8 pv S*8b 9a9d 8b8a+ 7b8a N*3c 2h1i 3c2a+ R*2h 2a1a
+<< info depth 9 seldepth 13 multipv 1 score cp -61 upperbound nodes 20253 nps 1350200 time 15 pv S*8b 9a9d
+<< info depth 8 seldepth 13 multipv 1 score cp -60 nodes 20253 nps 1350200 time 15 pv S*8b 9a9d
+<< bestmove S*8b ponder 9a9d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp 44 nodes 241 nps 241000 time 1 pv P*2c 2h1i
+<< info depth 2 seldepth 7 multipv 1 score cp 23 nodes 412 nps 412000 time 1 pv P*2c 2d2c
+<< info depth 3 seldepth 7 multipv 1 score cp -158 nodes 697 nps 348500 time 2 pv P*2c 2h1i 2c2b+ 3b2b
+<< info depth 5 seldepth 13 multipv 1 score cp -155 nodes 2714 nps 904666 time 3 pv P*2f R*2g 8b8a+ 7b8a N*3c 2g2f+ 3c2a+
+<< info depth 7 seldepth 13 multipv 1 score cp -150 nodes 21691 nps 1355687 time 16 pv 7g6h R*2g 5h6i 2g2f+ 6i7i 2h1i 7i8h 2f3e
+<< info depth 7 seldepth 13 multipv 1 score cp -100 nodes 21737 nps 1358562 time 16 pv 7g6h 2h1i 5h6i R*2g 6i7i 2g1g+ 7i8h 1g1f
+<< bestmove 7g6h ponder 2h1i
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp 214 nodes 300 nps 300000 time 1 pv 6h5g
+<< info depth 2 seldepth 5 multipv 1 score cp -26 nodes 550 nps 275000 time 2 pv P*2c 3b2c
+<< info depth 4 seldepth 6 multipv 1 score cp -226 nodes 1814 nps 604666 time 3 pv 6h5i R*2h 5h6i 2g3h
+<< info depth 5 seldepth 10 multipv 1 score cp -103 nodes 4499 nps 899800 time 5 pv 6h5i R*2h 5h6h 2g2f 6h7i 2f2e
+<< info depth 6 seldepth 10 multipv 1 score cp -103 nodes 6052 nps 1008666 time 6 pv 6h5i R*2h 5h6i 2g2f 6i7i 2f2e
+<< info depth 7 seldepth 12 multipv 1 score cp -25 nodes 14020 nps 1168333 time 12 pv 6h5g 2g2f P*2h 5b6b 3e3d 2d3d 8g8f
+<< info depth 8 seldepth 12 multipv 1 score cp -61 nodes 20028 nps 1178117 time 17 pv 6h5g 2g2f
+<< info depth 7 seldepth 16 multipv 1 score cp -25 nodes 20028 nps 1178117 time 17 pv 6h5g 2g2f P*2h 5b6b 3e3d 2d3d 8g8f
+<< bestmove 6h5g ponder 2g2f
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 6 multipv 1 score cp -68 nodes 320 nps 320000 time 1 pv 3e3d 2f2e P*2h
+<< info depth 2 seldepth 6 multipv 1 score cp -68 nodes 520 nps 260000 time 2 pv 3e3d 2f2e P*2h
+<< info depth 5 seldepth 8 multipv 1 score cp -210 nodes 5194 nps 1298500 time 4 pv 2e1c 2a1c P*2h 1c2e 5f5e
+<< info depth 6 seldepth 13 multipv 1 score cp -396 nodes 11982 nps 1331333 time 9 pv 5f5e 2f2e 5e5d 5c5d 4g9b+ N*3f 8b8a 3f4h+ 5g4h
+<< info depth 7 seldepth 14 multipv 1 score cp -410 nodes 15705 nps 1308750 time 12 pv 5f5e 2f2e 4g9b+ 2e3e 8b8a 7b8a 9b8a
+<< info depth 8 seldepth 14 multipv 1 score cp -388 nodes 21926 nps 1289764 time 17 pv 2e1c 2a1c
+<< bestmove 2e1c ponder 2a1c
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp -346 nodes 236 nps 236000 time 1 pv P*2c 3b2c
+<< info depth 2 seldepth 4 multipv 1 score cp -346 nodes 370 nps 370000 time 1 pv P*2c 3b2c
+<< info depth 3 seldepth 8 multipv 1 score cp -433 nodes 906 nps 453000 time 2 pv 3e3d 2d3d 1f1e 1d1e
+<< info depth 4 seldepth 8 multipv 1 score cp -500 nodes 1814 nps 604666 time 3 pv 3e3d 2d3d 5f5e 1c2e
+<< info depth 5 seldepth 9 multipv 1 score cp -541 nodes 4156 nps 831200 time 5 pv P*2c 3b2c 1f1e 1c2e 5f5e 1d1e
+<< info depth 6 seldepth 10 multipv 1 score cp -573 nodes 10774 nps 1077400 time 10 pv 5f5e N*3f P*2i 3f4h+ 5g4h 1c2e 2i2h
+<< info depth 7 seldepth 10 multipv 1 score cp -624 nodes 20776 nps 1298500 time 16 pv 5f5e N*3f 4g9b+ 3f4h+ 5g4h 2f3f 9b3h 3f4f
+<< info depth 6 seldepth 12 multipv 1 score cp -615 nodes 20778 nps 1298625 time 16 pv 5f5e N*3f
+<< bestmove 5f5e ponder N*3f
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 3 multipv 1 score cp -253 nodes 277 nps 138500 time 2 pv 8i7g
+<< info depth 2 seldepth 8 multipv 1 score cp -292 nodes 658 nps 329000 time 2 pv 5e5d 5c5d
+<< info depth 3 seldepth 10 multipv 1 score cp -657 nodes 1278 nps 426000 time 3 pv P*2c 2b2c 4g9b+
+<< info depth 4 seldepth 10 multipv 1 score cp -811 nodes 2196 nps 549000 time 4 pv 4g9b+ 2e3g+ 8b8a 7b8a 9b8a
+<< info depth 5 seldepth 12 multipv 1 score cp -646 nodes 3806 nps 761200 time 5 pv 5e5d 2e3g+ 5d5c+ 5b5c 4g9b+ R*2h 8b8a 7b8a 9b8a
+<< info depth 6 seldepth 16 multipv 1 score cp -868 nodes 13146 nps 1095500 time 12 pv 4g9b+ 2e3g+ 8b8a 7b8a 9b8a N*3f
+<< info depth 7 seldepth 18 multipv 1 score cp -820 nodes 17584 nps 1172266 time 15 pv 5e5d 2e3g+ 5d5c+ 5b5c P*5d 5c4b 4g9b+ N*3f 6f7e 4b3c
+<< info depth 8 seldepth 18 multipv 1 score cp -654 nodes 27622 nps 1200956 time 23 pv 5e5d 2e3g+ 5d5c+ 5b5c 4g9b+ 5c4b 8b8a 7b8a 9b8a
+<< info depth 9 seldepth 18 multipv 1 score cp -654 nodes 27720 nps 1205217 time 23 pv 5e5d 2e3g+ 5d5c+ 5b5c 4g9b+ 5c4b 8b8a 7b8a 9b8a
+<< bestmove 5e5d ponder 2e3g+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp -23 nodes 212 nps 212000 time 1 pv P*5e
+<< info depth 2 seldepth 8 multipv 1 score cp -490 nodes 788 nps 788000 time 1 pv P*2g 2e3g+ 2g2f 3g4g 4h4g
+<< info depth 3 seldepth 8 multipv 1 score cp -490 nodes 986 nps 493000 time 2 pv P*2g 2e3g+ 2g2f 3g4g 4h4g
+<< info depth 5 seldepth 10 multipv 1 score cp -761 nodes 5035 nps 1678333 time 3 pv P*2g 2e3g+ P*5e 3g4g 4h4g R*2h N*4h
+<< info depth 6 seldepth 11 multipv 1 score cp -621 nodes 6835 nps 1708750 time 4 pv P*2g 2e3g+ P*5e 3g4g 4h4g 5d2d 2g2f 2d2f
+<< info depth 8 seldepth 15 multipv 1 score cp -763 nodes 17610 nps 2201250 time 8 pv P*2g
+<< info depth 8 seldepth 16 multipv 1 score cp -761 nodes 17611 nps 2201375 time 8 pv P*2g 2e3g+ P*5e 5d2d 2g2f 3g4g 4h4g 2d2f 5e5d 2f2h+ 5g4h 5c5d
+<< bestmove P*2g ponder 2e3g+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -490 nodes 296 nps 148000 time 2 pv 2g2f 3g4g 4h4g
+<< info depth 2 seldepth 7 multipv 1 score cp -490 nodes 550 nps 275000 time 2 pv 2g2f 3g4g 4h4g
+<< info depth 5 seldepth 7 multipv 1 score cp -621 nodes 2846 nps 948666 time 3 pv P*5e 3g4g 4h4g 5d2d 2g2f 2d2f
+<< info depth 6 seldepth 14 multipv 1 score cp -830 nodes 7555 nps 1079285 time 7 pv 2g2f R*2h 5h6i 5d5g+ 6f5g 3g4h
+<< info depth 7 seldepth 14 multipv 1 score cp -816 nodes 13017 nps 1301700 time 10 pv P*5e 5d2d 2g2f 3g4g 4h4g R*3i 5g4h B*6i 5h6h 3i1i+
+<< info depth 8 seldepth 14 multipv 1 score cp -947 nodes 17372 nps 1240857 time 14 pv P*5e 5d2d
+<< info depth 7 seldepth 13 multipv 1 score cp -816 nodes 17372 nps 1240857 time 14 pv P*5e 5d2d 2g2f 3g4g 4h4g R*3i 5g4h B*6i 5h6h 3i1i+
+<< bestmove P*5e ponder 5d2d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp -954 nodes 297 nps 148500 time 2 pv 4h4g
+<< info depth 2 seldepth 8 multipv 1 score cp -621 nodes 380 nps 190000 time 2 pv 4h4g 5d2d 2g2f 2d2f
+<< info depth 5 seldepth 11 multipv 1 score cp -816 nodes 1456 nps 485333 time 3 pv 4h4g 5d2d 2g2f R*3i 5g4h B*6i 5h6h 3i1i+
+<< info depth 7 seldepth 11 multipv 1 score cp -1196 nodes 6599 nps 1099833 time 6 pv 4h4g 5d2d 2g2f R*3i N*4e B*6i 5h4h 3i1i+
+<< info depth 8 seldepth 17 multipv 1 score cp -1137 nodes 15457 nps 1288083 time 12 pv 4h4g 5d2d 2g2f R*3i N*4e B*6i 5h4h 3i1i+ 5e5d 5c5d
+<< info depth 9 seldepth 17 multipv 1 score cp -1157 nodes 23225 nps 1290277 time 18 pv 4h4g 5d2d
+<< info depth 8 seldepth 15 multipv 1 score cp -1076 nodes 23237 nps 1290944 time 18 pv 4h4g 5d2d 2g2f R*3i 5e5d B*6i 5h4h 3i1i+ 5d5c+ 5b5c N*4e 5c6b
+<< bestmove 4h4g ponder 5d2d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -340 nodes 506 nps 506000 time 1 pv 2g2f
+<< info depth 2 seldepth 7 multipv 1 score cp -508 nodes 664 nps 664000 time 1 pv 2g2f R*3i
+<< info depth 3 seldepth 9 multipv 1 score cp -934 nodes 1573 nps 786500 time 2 pv 2g2f R*3i 5e5d B*6i 5h4h 3i1i+ 5d5c+ 5b5c
+<< info depth 5 seldepth 12 multipv 1 score cp -1116 nodes 6992 nps 1748000 time 4 pv 2g2f R*3i N*8d B*6i 5h4h 3i1i+ 8d7b+ N*3f 4g3f 6i3f+
+<< info depth 6 seldepth 13 multipv 1 score cp -952 nodes 10423 nps 2084600 time 5 pv 2g2f R*3i N*5i 3i1i+ 5h6h B*2h
+<< info depth 7 seldepth 13 multipv 1 score cp -980 nodes 16122 nps 2303142 time 7 pv 5g4h 2f2g N*8d R*2h 8d7b+ 6a7b 8b8a
+<< info depth 8 seldepth 13 multipv 1 score cp -1086 upperbound nodes 21301 nps 2662625 time 8 pv 5g4h 2f2g
+<< info depth 7 seldepth 13 multipv 1 score cp -984 nodes 21312 nps 2664000 time 8 pv 2g2f R*3i G*5i P*3f 5g4h 3i1i+ 5h6h 3f3g+ 4h3g
+<< bestmove 2g2f ponder R*3i
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -855 nodes 1225 nps 408333 time 3 pv 7h6h 2i1i+
+<< info depth 2 seldepth 7 multipv 1 score cp -855 nodes 1610 nps 536666 time 3 pv 7h6h 2i1i+
+<< info depth 4 seldepth 11 multipv 1 score cp -827 nodes 2768 nps 692000 time 4 pv 7h6h 2i1i+ N*8d 1i8i 8d7b+ 6a7b 8b8a
+<< info depth 5 seldepth 11 multipv 1 score cp -946 nodes 6285 nps 1047500 time 6 pv G*5i 2i1i+ 5g4h B*2h 6f7e
+<< info depth 6 seldepth 11 multipv 1 score cp -995 nodes 9736 nps 1217000 time 8 pv G*5i P*3f 5g4h 2i1i+ 6f7e B*2h 7e6d 6c6d
+<< info depth 7 seldepth 13 multipv 1 score cp -1073 nodes 23992 nps 1262736 time 19 pv G*5i P*3f
+<< info depth 6 seldepth 15 multipv 1 score cp -1018 nodes 23992 nps 1262736 time 19 pv G*5i P*3f
+<< bestmove G*5i ponder P*3f
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -985 nodes 458 nps 229000 time 2 pv 5g4h 3g1i+ N*8d 2i2f+ 8d7b+ 6a7b
+<< info depth 2 seldepth 7 multipv 1 score cp -906 nodes 655 nps 327500 time 2 pv 5g4h 3g2f+
+<< info depth 3 seldepth 10 multipv 1 score cp -1147 nodes 1423 nps 474333 time 3 pv 5g4h 3g2f+ 6f7e 2i1i+ 7e6d 6c6d
+<< info depth 4 seldepth 11 multipv 1 score cp -1136 nodes 2389 nps 597250 time 4 pv 5g4h 3g2f+ 6f7e N*3f
+<< info depth 5 seldepth 12 multipv 1 score cp -1201 nodes 7376 nps 1053714 time 7 pv 5g4h 3g2f+ N*8d 7b8c 6f7e 6d8d 7e8d 8c8d 8b8a
+<< info depth 6 seldepth 13 multipv 1 score cp -1266 nodes 9177 nps 1147125 time 8 pv 5g4h 3g2f+ 5e5d 6d5d P*5e 5d2d N*8d 2i1i+ 8d7b+ 6a7b 8b8a
+<< info depth 7 seldepth 13 multipv 1 score cp -1146 nodes 13757 nps 1146416 time 12 pv 5g4h 3g2f+ P*2g 2i2g+ N*9c N*3f 9c8a+ 3f4h+ 5i4h
+<< info depth 8 seldepth 15 multipv 1 score cp -1237 nodes 21111 nps 1111105 time 19 pv 5g4h 3g2f+ 6f7e N*3f N*8d 3f4h+ 7e4h 6d2d 8d7b+ 6a7b 8b8a
+<< info depth 9 seldepth 15 multipv 1 score cp -1237 nodes 23283 nps 1108714 time 21 pv 5g4h 3g2f+ 6f7e N*3f N*8d 3f4h+ 7e4h 6d2d 8d7b+ 6a7b 8b8a
+<< bestmove 5g4h ponder 3g2f+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -1136 nodes 495 nps 247500 time 2 pv 6f7e N*3f
+<< info depth 2 seldepth 9 multipv 1 score cp -1136 nodes 765 nps 382500 time 2 pv 6f7e N*3f
+<< info depth 3 seldepth 9 multipv 1 score cp -1276 nodes 1553 nps 517666 time 3 pv N*8d 7b8c 8b8a 8c8d
+<< info depth 5 seldepth 10 multipv 1 score cp -1345 nodes 5543 nps 1108600 time 5 pv P*2g 2f2g N*8d 7b8c 8b8a 2i1i+
+<< info depth 6 seldepth 10 multipv 1 score cp -1345 nodes 7363 nps 1051857 time 7 pv P*2g 2f2g N*8d 7b8c 8b8a 2i1i+
+<< info depth 7 seldepth 10 multipv 1 score cp -1401 nodes 21056 nps 1238588 time 17 pv P*2g 2f2g 6f7e N*3f 7e6d 3f4h+ 5i4h 6c6d
+<< info depth 8 seldepth 14 multipv 1 score cp -1423 upperbound nodes 25591 nps 1279550 time 20 pv P*2g 2f2g
+<< info depth 7 seldepth 11 multipv 1 score cp -1401 nodes 25591 nps 1279550 time 20 pv P*2g 2f2g 6f7e N*3f 7e6d 3f4h+ 5i4h 6c6d
+<< bestmove P*2g ponder 2f2g
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp -1291 nodes 618 nps 309000 time 2 pv N*8d 7b8c
+<< info depth 2 seldepth 8 multipv 1 score cp -1291 nodes 949 nps 474500 time 2 pv N*8d 7b8c
+<< info depth 3 seldepth 8 multipv 1 score cp -1345 nodes 1195 nps 398333 time 3 pv N*8d 7b8c 8b8a 2i1i+
+<< info depth 5 seldepth 11 multipv 1 score cp -1435 nodes 4396 nps 879200 time 5 pv 5h6h N*3f 4h5g 2i1i+ N*9c
+<< info depth 6 seldepth 15 multipv 1 score cp -1430 nodes 8261 nps 1180142 time 7 pv N*8d 7b8c 8b8a+ N*3f N*5f 3f4h+ 5i4h 6d8d 6f8d 8c8d
+<< info depth 7 seldepth 15 multipv 1 score cp -1456 nodes 12189 nps 1218900 time 10 pv N*8d 7b8c 8b8a+ N*3f N*5f 3f4h+ 6f4h 6d8d 4h8d 8c8d
+<< info depth 8 seldepth 15 multipv 1 score cp -1465 upperbound nodes 28966 nps 1206916 time 24 pv 6f7e N*3f
+<< info depth 7 seldepth 15 multipv 1 score cp -1450 nodes 28966 nps 1206916 time 24 pv N*8d 7b8c
+<< bestmove N*8d ponder 7b8c
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -1318 nodes 430 nps 215000 time 2 pv 8b8a+ 2i1i+
+<< info depth 2 seldepth 7 multipv 1 score cp -1397 nodes 658 nps 329000 time 2 pv 8b8a+ 8c8d
+<< info depth 5 seldepth 9 multipv 1 score cp -1564 nodes 3286 nps 1095333 time 3 pv 8b8a 2i1i+ 8d9b+ N*3f 5h6h 3f4h+ 6f4h
+<< info depth 6 seldepth 9 multipv 1 score cp -1564 nodes 4750 nps 1187500 time 4 pv 8b8a 2i1i+ 8d9b+ N*3f 5h6h 3f4h+ 6f4h
+<< info depth 7 seldepth 11 multipv 1 score cp -1714 upperbound nodes 17219 nps 1434916 time 12 pv 8b8a 8c8d
+<< info depth 7 seldepth 13 multipv 1 score cp -1564 nodes 17219 nps 1434916 time 12 pv 8b8a 2i1i+ 8d9b+ N*3f 5h6h 3f4h+ 6f4h
+<< bestmove 8b8a ponder 2i1i+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -1664 nodes 473 nps 473000 time 1 pv N*5f 6d2d
+<< info depth 2 seldepth 7 multipv 1 score cp -1664 nodes 707 nps 707000 time 1 pv N*5f 6d2d
+<< info depth 3 seldepth 9 multipv 1 score cp -1694 nodes 1252 nps 626000 time 2 pv 8a9b N*3f N*5f 3f4h+ 5i4h
+<< info depth 5 seldepth 11 multipv 1 score cp -1720 nodes 3220 nps 1073333 time 3 pv 8a9b N*3f 9b8c+ 6d6f 6g6f 3f4h+ 5i4h
+<< info depth 7 seldepth 13 multipv 1 score cp -1665 nodes 12100 nps 1512500 time 8 pv N*5f 6d2d 6f8d 2d8d S*7b N*3f 7b6a 5b6a
+<< info depth 8 seldepth 13 multipv 1 score cp -1823 upperbound nodes 24998 nps 1785571 time 14 pv N*5f 6d2d
+<< info depth 7 seldepth 13 multipv 1 score cp -1691 nodes 24998 nps 1785571 time 14 pv N*5f 6d2d
+<< bestmove N*5f ponder 6d2d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp -1572 nodes 189 nps 94500 time 2 pv 5e5d 2d5d
+<< info depth 2 seldepth 4 multipv 1 score cp -1572 nodes 287 nps 143500 time 2 pv 5e5d 2d5d
+<< info depth 3 seldepth 10 multipv 1 score cp -1827 nodes 726 nps 242000 time 3 pv 6f8d 2d8d S*7b
+<< info depth 6 seldepth 13 multipv 1 score cp -2070 nodes 8031 nps 1003875 time 8 pv 8a9b N*3f 9b8c+ 8d8e 8c7c 2i1i+
+<< info depth 7 seldepth 14 multipv 1 score cp -1645 nodes 18265 nps 1141562 time 16 pv 3e3d 2d3d 6f8d 3d8d S*7b N*3f 7b6a 5b6a
+<< info depth 8 seldepth 14 multipv 1 score cp -1927 nodes 20659 nps 1147722 time 18 pv 3e3d 2d3d 6f8d 3d8d S*7b N*3f 7b6a+ 8d8a
+<< info depth 9 seldepth 14 multipv 1 score cp -1927 nodes 26708 nps 1112833 time 24 pv 3e3d 2d3d 6f8d 3d8d S*7b N*3f 7b6a+ 8d8a
+<< bestmove 3e3d ponder 2d3d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score cp -1685 nodes 177 nps 88500 time 2 pv 5e5d 3d5d
+<< info depth 2 seldepth 4 multipv 1 score cp -1685 nodes 312 nps 156000 time 2 pv 5e5d 3d5d
+<< info depth 3 seldepth 7 multipv 1 score cp -1957 nodes 667 nps 222333 time 3 pv 6f8d 3d8d S*7b
+<< info depth 6 seldepth 9 multipv 1 score cp -1950 nodes 3665 nps 916250 time 4 pv 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+
+<< info depth 7 seldepth 12 multipv 1 score cp -2087 nodes 6660 nps 1110000 time 6 pv 5e5d 3d5d 6f8d 5d8d S*7b 6a7b 8a7b+ N*3f
+<< info depth 8 seldepth 12 multipv 1 score cp -1874 nodes 12423 nps 1129363 time 11 pv 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*2a B*2e 5h6h
+<< info depth 9 seldepth 12 multipv 1 score cp -2088 nodes 19425 nps 1214062 time 16 pv 6f8d 3d8d
+<< info depth 8 seldepth 13 multipv 1 score cp -1874 nodes 19425 nps 1214062 time 16 pv 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*2a B*2e 5h6h
+<< bestmove 6f8d ponder 3d8d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 5 multipv 1 score cp -1887 nodes 383 nps 191500 time 2 pv S*3h
+<< info depth 2 seldepth 6 multipv 1 score cp -1645 nodes 688 nps 344000 time 2 pv S*7b N*3f 7b6a 5b6a
+<< info depth 5 seldepth 12 multipv 1 score cp -2107 nodes 3264 nps 1088000 time 3 pv S*7b N*3f 5h6h 3f4h+ 7b6a 5b6a 5i4h 8d8a
+<< info depth 6 seldepth 12 multipv 1 score cp -2117 nodes 9341 nps 1868200 time 5 pv S*7b N*3f 7b6a 5b6a 4g3f 2g3f G*4g 3f2f
+<< info depth 7 seldepth 15 multipv 1 score cp -2308 nodes 17834 nps 2229250 time 8 pv S*3h 2g3h 4g3h 2i1i+ B*2a 8d3d 3h4g N*3f
+<< info depth 9 seldepth 15 multipv 1 score cp -2308 nodes 24295 nps 2429500 time 10 pv S*3h 2g3h 4g3h 2i1i+ B*2a 8d3d 3h4g N*3f
+<< bestmove S*3h ponder 2g3h
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp -1950 nodes 260 nps 260000 time 1 pv 4g3h 2i1i+
+<< info depth 2 seldepth 8 multipv 1 score cp -1950 nodes 431 nps 215500 time 2 pv 4g3h 2i1i+
+<< info depth 6 seldepth 8 multipv 1 score cp -2492 nodes 2336 nps 778666 time 3 pv 4g3h 2i1i+ B*2a 8d3d 3h4g 3b3a
+<< info depth 7 seldepth 11 multipv 1 score cp -2047 nodes 9385 nps 1173125 time 8 pv 4g3h 2i1i+ B*7b 6a5a 3h4g S*6a 5h6h 6a7b 8a7b+
+<< bestmove 4g3h ponder 2i1i+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -2030 nodes 541 nps 270500 time 2 pv B*7b 6a5a
+<< info depth 2 seldepth 7 multipv 1 score cp -2030 nodes 763 nps 381500 time 2 pv B*7b 6a5a
+<< info depth 5 seldepth 9 multipv 1 score cp -2047 nodes 2240 nps 746666 time 3 pv B*7b 6a5a 3h4g S*6a 5h6h 6a7b 8a7b+
+<< info depth 6 seldepth 12 multipv 1 score cp -2062 nodes 4884 nps 1221000 time 4 pv B*7b 6a5a 5h6h S*6a 8i7g 6a7b 8a7b N*3f
+<< info depth 7 seldepth 12 multipv 1 score cp -2056 nodes 11130 nps 1011818 time 11 pv B*7b 6a5a 5h6h 1i1f 6h6i B*1e 6i7i 1f4f
+<< info depth 8 seldepth 12 multipv 1 score cp -2104 upperbound nodes 13073 nps 1005615 time 13 pv B*7b 6a5a
+<< bestmove B*7b ponder 6a5a
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -2232 nodes 476 nps 238000 time 2 pv 5h6i B*2e 3h4g 2e1f
+<< info depth 2 seldepth 7 multipv 1 score cp -2371 nodes 786 nps 393000 time 2 pv 3h4g B*2g
+<< info depth 3 seldepth 7 multipv 1 score cp -2300 nodes 1312 nps 437333 time 3 pv 5h6i N*3f 4h5g
+<< info depth 4 seldepth 7 multipv 1 score cp -2283 nodes 2481 nps 620250 time 4 pv 5h6i 1i1f 3h4g B*1e
+<< info depth 5 seldepth 10 multipv 1 score cp -2302 nodes 6688 nps 955428 time 7 pv 5h6i B*2e 3h4g 1i1f 6i7i N*3f
+<< info depth 6 seldepth 12 multipv 1 score cp -2577 nodes 26386 nps 1147217 time 23 pv 8i7g 5b4b 7g6e 8d3d 3h4g N*3f
+<< info depth 7 seldepth 13 multipv 1 score cp -2546 nodes 29924 nps 1150923 time 26 pv 8i7g 5b4b 7g6e N*3f 4h5g 4b3c 7h6h 8d8g+ 7b9d+
+<< info depth 8 seldepth 13 multipv 1 score cp -2546 nodes 33213 nps 1186178 time 28 pv 8i7g 5b4b 7g6e N*3f 4h5g 4b3c 7h6h 8d8g+ 7b9d+
+<< bestmove 8i7g ponder 5b4b
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp -2248 nodes 454 nps 227000 time 2 pv 4h3g
+<< info depth 2 seldepth 8 multipv 1 score cp -2193 nodes 707 nps 353500 time 2 pv 4h3g 5b4b 3g3f
+<< info depth 3 seldepth 12 multipv 1 score cp -2198 nodes 1857 nps 619000 time 3 pv 4h4g 1i3i 7g6e
+<< info depth 4 seldepth 13 multipv 1 score cp -2514 nodes 4833 nps 805500 time 6 pv 4h5g 5b4b 7g6e 4b3c
+<< info depth 5 seldepth 13 multipv 1 score cp -2491 nodes 7468 nps 933500 time 8 pv 4h5g 5b4b 5i4i 4b3c 7g6e
+<< info depth 6 seldepth 14 multipv 1 score cp -2626 nodes 22581 nps 1075285 time 21 pv 3h3g 3f4h+ 3g4h 1i1f 5h6h 5b4b 7g6e 1f4f
+<< info depth 7 seldepth 14 multipv 1 score cp -2856 upperbound nodes 34202 nps 1221500 time 28 pv 3h3g 3f4h+
+<< info depth 6 seldepth 15 multipv 1 score cp -2846 nodes 34202 nps 1221500 time 28 pv 3h3g 3f4h+
+<< bestmove 3h3g ponder 3f4h+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -2590 nodes 149 nps 74500 time 2 pv 3g4h
+<< info depth 2 seldepth 7 multipv 1 score cp -2360 nodes 231 nps 115500 time 2 pv 3g4h B*2h
+<< info depth 5 seldepth 11 multipv 1 score cp -2972 nodes 4691 nps 1172750 time 4 pv 3g4h B*2h 5h6h 2h4f+ 4h5g 1i2h 5i5h 4f5e
+<< info depth 7 seldepth 15 multipv 1 score cp -2864 nodes 11012 nps 1835333 time 6 pv 3g4h B*2h 5h5g 5b4b N*4e 1i1g 4h4g 2h3i+ 5i4h
+<< info depth 8 seldepth 15 multipv 1 score cp -3112 nodes 32568 nps 2171200 time 15 pv 3g4h B*2h 7h6h N*3f 7g6e 2h4f+ 4h4g 1i2h N*4h 4f5e 4g3f 5e6e
+<< info depth 9 seldepth 15 multipv 1 score cp -3112 nodes 32902 nps 2193466 time 15 pv 3g4h B*2h 7h6h N*3f 7g6e 2h4f+ 4h4g 1i2h N*4h 4f5e 4g3f 5e6e
+<< bestmove 3g4h ponder B*2h
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -2593 nodes 962 nps 481000 time 2 pv N*4e 3f4h+ 5i4h
+<< info depth 2 seldepth 9 multipv 1 score cp -2552 nodes 1776 nps 592000 time 3 pv 4h5g 5b4b N*4e
+<< info depth 3 seldepth 9 multipv 1 score cp -2553 nodes 3237 nps 809250 time 4 pv 4h4g 1i3i 7g6e
+<< info depth 4 seldepth 12 multipv 1 score cp -2700 nodes 6454 nps 922000 time 7 pv 4h5g S*4g 5h4g 1i5i
+<< info depth 5 seldepth 12 multipv 1 score cp -2983 nodes 15263 nps 1174076 time 13 pv 4h5g 1i2h N*4h 5b4b 7g6e B*2g
+<< info depth 6 seldepth 12 multipv 1 score cp -3118 nodes 27354 nps 1189304 time 23 pv 7g6e 3f4h+ 5i4h S*6i 5h4g 1i1g N*3g B*2i 4g5g 6i7h
+<< info depth 7 seldepth 15 multipv 1 score cp -3161 upperbound nodes 37737 nps 1301275 time 29 pv 7g6e 3f4h+
+<< info depth 6 seldepth 13 multipv 1 score cp -3138 nodes 37738 nps 1301310 time 29 pv 7g6e 3f4h+
+<< bestmove 7g6e ponder 3f4h+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp -2863 nodes 315 nps 157500 time 2 pv 5i4h S*6i 5h4g 1i1g N*3g 6i7h
+<< info depth 2 seldepth 10 multipv 1 score cp -2907 nodes 613 nps 306500 time 2 pv 5i4h S*6i 5h4g B*2i 4g5g 6i7h+
+<< info depth 3 seldepth 12 multipv 1 score cp -3095 nodes 858 nps 286000 time 3 pv 5i4h S*6i 5h4g 1i1g N*3g B*2i 4g5g 6i7h N*4e 8d8g+
+<< info depth 6 seldepth 14 multipv 1 score cp -3214 nodes 6761 nps 965857 time 7 pv 5i4h S*6i 5h4g 1i1g N*3g B*2i 4g5g S*5i 5g6f 5i4h
+<< info depth 7 seldepth 15 multipv 1 score cp -3244 nodes 12659 nps 1054916 time 12 pv 5i4h S*6i 5h4g 6i7h 6e5c+ 6b5c N*6e B*6i N*5h N*3e 4g5g
+<< info depth 8 seldepth 15 multipv 1 score cp -3313 nodes 37948 nps 1264933 time 30 pv 5i4h
+<< info depth 7 seldepth 16 multipv 1 score cp -3244 nodes 37960 nps 1265333 time 30 pv 5i4h S*6i 5h4g 6i7h 6e5c+ 6b5c N*6e B*6i N*5h N*3e 4g5g
+<< bestmove 5i4h ponder S*6i
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -3188 nodes 130 nps 65000 time 2 pv 5h5g 1i5i 5g4g
+<< info depth 2 seldepth 9 multipv 1 score cp -3228 nodes 343 nps 171500 time 2 pv 5h5g 1i5i 5g4g B*2i N*3h 6i7h
+<< info depth 6 seldepth 11 multipv 1 score cp -3214 nodes 2741 nps 913666 time 3 pv 5h4g 1i1g N*3g B*2i 4g5g S*5i 5g6f 5i4h
+<< info depth 7 seldepth 13 multipv 1 score cp -3421 nodes 11932 nps 1988666 time 6 pv 5h4g 1i1g N*3g B*2i 4g5g 6i7h+ 6e5c+ 6b5c N*6e S*6h 5g6f
+<< info depth 8 seldepth 14 multipv 1 score cp -3772 nodes 42593 nps 2505470 time 17 pv 5h4g 1i1g
+<< info depth 7 seldepth 14 multipv 1 score cp -3680 nodes 42593 nps 2505470 time 17 pv 5h4g 1i1g
+<< bestmove 5h4g ponder 1i1g
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i 5h4g 6i7h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp -3201 nodes 871 nps 435500 time 2 pv N*4e B*6i 4g5g 1i5i 5g6f
+<< info depth 2 seldepth 9 multipv 1 score cp -3201 nodes 1258 nps 419333 time 3 pv N*4e B*6i 4g5g 1i5i 5g6f
+<< info depth 4 seldepth 10 multipv 1 score cp -3623 nodes 8928 nps 1116000 time 8 pv N*4e B*6i 4g5g 8d8g+ N*4d 4c4d 5f4d 5b4c
+<< info depth 5 seldepth 10 multipv 1 score cp -3914 upperbound nodes 36916 nps 1318428 time 28 pv N*4e B*6i
+<< info depth 4 seldepth 13 multipv 1 score cp -3870 nodes 36916 nps 1318428 time 28 pv N*4e B*6i
+<< bestmove N*4e ponder B*6i
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i 5h4g 6i7h N*4e B*6i
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 7 multipv 1 score cp -3201 nodes 130 nps 65000 time 2 pv 4g5g 1i5i 5g6f
+<< info depth 2 seldepth 7 multipv 1 score cp -3201 nodes 241 nps 120500 time 2 pv 4g5g 1i5i 5g6f
+<< info depth 5 seldepth 14 multipv 1 score cp -4557 nodes 6833 nps 976142 time 7 pv 4g5g 1i5i N*5h S*6h 5g4g 7h6g 8a9b 6b7b 6e5c+ 5b6a
+<< info depth 6 seldepth 14 multipv 1 score cp -4515 nodes 8660 nps 962222 time 9 pv 4g5g 1i5i N*5h S*6h 5g4g 7h6g 4g3g 6g5f
+<< info depth 7 seldepth 20 multipv 1 score mate -10 nodes 43386 nps 1239600 time 35 pv 4g5g S*6h 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< bestmove 4g5g ponder S*6h
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i 5h4g 6i7h N*4e B*6i 4g5g S*6h
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 8 multipv 1 score cp -2494 nodes 119 nps 59500 time 2 pv 5g6h 8d8g+
+<< info depth 2 seldepth 8 multipv 1 score mate -8 nodes 235 nps 117500 time 2 pv 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e
+<< info depth 6 seldepth 9 multipv 1 score mate -8 nodes 780 nps 260000 time 3 pv 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< info depth 9 seldepth 9 multipv 1 score mate -8 nodes 2445 nps 611250 time 4 pv 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< info depth 10 seldepth 9 multipv 1 score mate -8 nodes 2662 nps 532400 time 5 pv 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< info depth 11 seldepth 9 multipv 1 score mate -8 nodes 5370 nps 767142 time 7 pv 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< info depth 12 seldepth 9 multipv 1 score mate -8 nodes 6619 nps 735444 time 9 pv 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< info depth 13 seldepth 9 multipv 1 score mate -8 nodes 11998 nps 857000 time 14 pv 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< bestmove 5g6h ponder G*7g
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i 5h4g 6i7h N*4e B*6i 4g5g S*6h 5g6h G*7g
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 6 multipv 1 score mate -6 nodes 49 nps 24500 time 2 pv 6h7g 8d8g+ 7g6f 7h6g+ 6f7e
+<< info depth 2 seldepth 6 multipv 1 score mate -6 nodes 156 nps 78000 time 2 pv 6h7g 8d8g+ 7g6f 7h6g+ 6f7e
+<< info depth 8 seldepth 7 multipv 1 score mate -6 nodes 767 nps 255666 time 3 pv 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< info depth 13 seldepth 7 multipv 1 score mate -6 nodes 3741 nps 748200 time 5 pv 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+<< bestmove 6h7g ponder 8d8g+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i 5h4g 6i7h N*4e B*6i 4g5g S*6h 5g6h G*7g 6h7g 8d8g+
+>> go btime 100 wtime 100
+<< info depth 1 seldepth 4 multipv 1 score mate -4 nodes 33 nps 16500 time 2 pv 7g6f 7h6g+ 6f7e
+<< info depth 2 seldepth 4 multipv 1 score mate -4 nodes 123 nps 61500 time 2 pv 7g6f 7h6g+ 6f7e
+<< info depth 10 seldepth 5 multipv 1 score mate -4 nodes 626 nps 208666 time 3 pv 7g6f 7h6g+ 6f7e L*7d
+<< info depth 15 seldepth 5 multipv 1 score mate -4 nodes 2652 nps 663000 time 4 pv 7g6f 7h6g+ 6f7e L*7d
+<< info depth 19 seldepth 5 multipv 1 score mate -4 nodes 5785 nps 1157000 time 5 pv 7g6f 7h6g+ 6f7e L*7d
+<< info depth 22 seldepth 5 multipv 1 score mate -4 nodes 8185 nps 1364166 time 6 pv 7g6f 7h6g+ 6f7e L*7d
+<< info depth 25 seldepth 5 multipv 1 score mate -4 nodes 10512 nps 1501714 time 7 pv 7g6f 7h6g+ 6f7e L*7d
+<< info depth 28 seldepth 5 multipv 1 score mate -4 nodes 12921 nps 1615125 time 8 pv 7g6f 7h6g+ 6f7e L*7d
+<< info depth 32 seldepth 5 multipv 1 score mate -4 nodes 15845 nps 1760555 time 9 pv 7g6f 7h6g+ 6f7e L*7d
+<< bestmove 7g6f ponder 7h6g+
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i 5h4g 6i7h N*4e B*6i 4g5g S*6h 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+
+>> go btime 100 wtime 100
+<< bestmove 6f7e ponder L*7d
+>> position sfen lnsgkgsnl/1r5b1/ppppppppp/9/9/9/PPPPPPPPP/1B5R1/LNSGKGSNL b - 1 moves 2g2f 3c3d 7g7f 4a3b 6i7h 8c8d 2f2e 8d8e 5i5h 8e8f 8g8f 8b8f 2e2d 2c2d 2h2d 2b8h+ 7i8h P*2b 2d2h 5a5b P*8g 8f8c 8h7g 7a7b B*4f 3a4b 3g3f 4b3c 3i3h 3c4d 2i3g 9c9d 2h2f 9d9e 4i4h 1c1d 5g5f 3d3e 3f3e P*3f 2f3f B*2h 3g2e 2h3i+ 3h4i 3i4h 4i4h 4d4e 3f2f 4e4f 4g4f G*3h 1g1f B*2h 2f2h 3h2h B*4g 8c8d B*6f 8d2d S*8b 9a9d 7g6h 2h2g 6h5g 2g2f 2e1c 2a1c 5f5e 1c2e 5e5d 2d5d P*2g 2e3g+ P*5e 3g4g 4h4g 5d6d 2g2f R*2i G*5i B*3g 5g4h 3g2f+ P*2g 2f2g N*8d 7b8c 8b8a 8c8d N*5f 6d2d 3e3d 2d3d 6f8d 3d8d S*3h 2g3h 4g3h 2i1i+ B*7b 6a6b 8i7g N*3f 3h3g 3f4h+ 3g4h N*3f 7g6e 3f4h+ 5i4h S*6i 5h4g 6i7h N*4e B*6i 4g5g S*6h 5g6h G*7g 6h7g 8d8g+ 7g6f 7h6g+ 6f7e L*7d
+>> go btime 100 wtime 100
+<< info depth 0 score mate 1
+<< bestmove resign
+>> gameover draw
+>> quit
+<< end logger
