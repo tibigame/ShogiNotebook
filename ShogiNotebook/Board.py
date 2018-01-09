@@ -8,7 +8,7 @@ fp = FontProperties(fname=r'C:\Windows\Fonts\ipaexg.ttf', size=24)
 
 row = ["〇", "一", "二", "三", "四", "五", "六", "七", "八", "九",
        "十", "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八"]
-colmun = ["０", "１", "２", "３", "４", "５", "６", "７", "８", "９"]
+column = ["０", "１", "２", "３", "４", "５", "６", "７", "８", "９"]
 
 
 def dec_piecenum(piecenum):  # 駒の数字から駒文字に変更する
@@ -206,9 +206,11 @@ class Board:
     # 盤面の駒値を返す
     def get_num(self, pos):
         return self.ban[pos[1] - 1][pos[0] - 1]
+
     # マス目が空かどうか
     def is_space(self, pos):
         return self.get_num(pos) == 0
+
     # 先手の駒か
     def is_black_piece(self, pos):
         num = self.get_num(pos)
@@ -217,23 +219,27 @@ class Board:
         elif num != 0:  # 先手の駒
             return True
         return False  # 空マス
+
     # 後手の駒か
     def is_white_piece(self, pos):
         num = self.get_num(pos)
         if num & 1:  # 後手の駒
             return True
         return False  # 先手の駒 か 空マス
+
     # 成り駒か
     def is_promote(self, pos):
         if self.get_num(pos) % 4 >= 2:
             return True
         return False
+
     # 玉か
     def is_king(self, pos):
         num = self.get_num(pos)
         if num == 2**2 or num == 2**2 + 1:
             return True
         return False
+
     # 駒の先後を反転した値を返す
     def calc_reverse_num(self, num):
         if num == 0:
@@ -241,6 +247,7 @@ class Board:
         if num & 1:  # 後手の駒はmod2==1なので1を引く
             return num -1
         return num + 1  # 先手の駒はmod2==0なので1を足す
+
     def get_reverse_num(self, pos):
         return self.calc_reverse_num(self.get_num(pos))
 
@@ -254,6 +261,7 @@ class Board:
         if num % 4 >= 2:
             raise ValueError("駒の成りを既に成っている駒に適用しようとしました")
         return num + 2  # 成り駒は素の駒に2を足したもの
+
     # 駒の素の値を返す(成り駒も成る前の値)
     def get_raw_num(self, pos):
         num = self.get_num(pos)
@@ -264,12 +272,14 @@ class Board:
     # 駒のインデックスのタプルを返す
     def get_pos(self, p):
         return get_pos(p, self.ban)
+
     # 駒の符号を返す(無い場合は0、複数ある場合は1つ目)
     def get_x_pos1(self, p):
         r = conv_pos_tuple(self.get_pos(p))
         if len(r) == 0:
             return 0
         return r[0]
+
     # 駒の符号を返す(無い場合は0、複数ある場合はリストを返す)
     def get_x_pos2(self, p):
         r = conv_pos_tuple(self.get_pos(p))
@@ -280,40 +290,54 @@ class Board:
     # 玉の位置(玉は必ずある。stay=5筋、right=右側、left=左側、middle=中段、nyugyoku=敵陣)
     def is_k_stay(self):
         return self.get_pos("k")[1][0] == 4
+
     def is_K_stay(self):
         return self.get_pos("K")[1][0] == 4
+
     def is_k_right(self):
         return self.get_pos("k")[1][0] > 4
+
     def is_k_left(self):
         return self.get_pos("k")[1][0] < 4
+
     def is_K_right(self):
         return self.get_pos("K")[1][0] < 4
+
     def is_K_left(self):
         return self.get_pos("K")[1][0] > 4
+
     def is_k_middle(self):
         y = self.get_pos("k")[0][0]
         return y >= 3 and y <= 5
+
     def is_K_middle(self):
         y = self.get_pos("K")[0][0]
         return y >= 3 and y <= 5
+
     def is_k_nyugyoku(self):
         return self.get_pos("k")[0][0] >= 6
+
     def is_K_nyugyoku(self):
         return self.get_pos("K")[0][0] <= 2
 
     # 盤上の駒の枚数をカウントする
     def count_piece(self, p, enemy_field=False):
         return len(self.ban[self.ban == piece[p][0]])
+
     def count_b(self):  # 先手の駒
         return len(self.ban[np.logical_and(self.ban % 2 == 0, self.ban != 0)])  # 偶数かつ0以外
+
     def count_w(self, bitboard=False):  # 後手の駒
         return len(self.ban[self.ban % 2 == 1])  # 奇数
+
     def count_b_bitboard(self, bitboard):  # 先手の駒をbitboardの場所でのみカウントする
         ban = np.where(self.ban & bitboard, self.ban, 0)
         return len(ban[np.logical_and(ban % 2 == 0, ban != 0)])
+
     def count_w_bitboard(self, bitboard):  # 後手の駒をbitboardの場所でのみカウントする
         ban = np.where(self.ban & bitboard, self.ban, 0)
         return len(ban[ban % 2 == 1])
+
     # USIプロトコルの指し手文字列を分析します。
     def __analize_move(self, move_string: str):
         def int_to_file(char: str) -> int:
@@ -362,12 +386,12 @@ class Board:
 
         m_l = list(move_string)
         # 持ち駒を打つ
-        if(m_l[0] == "R" or m_l[0] == "B" or m_l[0] == "G" or m_l[0] == "S" or m_l[0] == "N" or m_l[0] == "L" or m_l[0] == "P"):
+        if m_l[0] == "R" or m_l[0] == "B" or m_l[0] == "G" or m_l[0] == "S" or m_l[0] == "N" or m_l[0] == "L" or m_l[0] == "P":
             peace = m_l[0]
             if m_l[1] != "*":
                 raise ValueError("駒を打つときの2文字目は*である必要があります")
             pos = (int_to_file(m_l[2]), char_to_rank(m_l[3]))
-            return ("place", peace, pos, False)
+            return "place", peace, pos, False
         # 盤上の駒を動かす
         pos = (int_to_file(m_l[0]), char_to_rank(m_l[1]))
         moved = (int_to_file(m_l[2]), char_to_rank(m_l[3]))
@@ -375,7 +399,7 @@ class Board:
             is_promote = True
         else:
             is_promote = False
-        return ("move", pos, moved, is_promote)
+        return "move", pos, moved, is_promote
 
     # USIプロトコルの指し手を与えて実行します。駒の動きの正当性のチェックはしません。
     def move(self, move_string: str, detail_kif=False):
@@ -420,9 +444,9 @@ class Board:
             m_d.move_piece_str = dec_piecenum(self.ban[m[1][1] - 1][m[1][0] - 1])
             # 詳細な棋譜表記生成
             if detail_kif:
-                detail = colmun(m[2][0]) + row(m[2][1])
+                detail = column(m[2][0]) + row(m[2][1])
                 detail += piece[m_d.move_piece_str][1]
-                 # TODO 上下寄右左などの条件を作成する必要がある
+                # TODO 上下寄右左などの条件を作成する必要がある
                 if m[3]:  # TODO 不成の条件を作成する必要がある
                     detail += "成"
             if m[3]:  # 駒を成る場合
@@ -451,7 +475,7 @@ class Board:
             m_d.move_piece_str = p
             # 詳細な棋譜表記生成
             if detail_kif:
-                detail = colmun(m[2][0]) + row(m[2][1])
+                detail = column(m[2][0]) + row(m[2][1])
                 detail += piece[p][1]
                 detail += "打" # TODO 打が入る条件を作成する必要がある
         else:
@@ -496,6 +520,7 @@ class Board:
 
     def __plt_text(self, x, y, char, rot=0):
         plt.text(x, y, char, fontsize = 24, rotation = rot, fontproperties=fp, ha='center', va='center')
+
     def __plot_ban(self, plt, kato123=False):
         if kato123:  # ひふみんアイでの反転した盤面を作る
             ban = self.ban[::-1]
